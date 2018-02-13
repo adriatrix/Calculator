@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Modal Calculator</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn">Show</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-box">
+    <span class="close">&times;</span>
+    <br>
+    <p id="display">0</p>
+
+    <input type="button" id="clear" value="C" onclick="clearDisplay()">
+    <input type="button" id="delete" value="<" onclick="deleteChar()">
+    <input type="button" id="percent" value="%" onclick="computePercent()">
+    <input type="button" id="divide" value="/" onclick="updateDisplay(this.value)">
+    <br>
+    <input type="button" id="num7" value="7" onclick="updateDisplayNumber(this.value)">
+    <input type="button" id="num8" value="8" onclick="updateDisplayNumber(this.value)">
+    <input type="button" id="num9" value="9" onclick="updateDisplayNumber(this.value)">
+    <input type="button" id="multiply" value="*" onclick="updateDisplay(this.value)">
+    <br>
+    <input type="button" id="num4" value="4" onclick="updateDisplayNumber(this.value)">
+    <input type="button" id="num5" value="5" onclick="updateDisplayNumber(this.value)">
+    <input type="button" id="num6" value="6" onclick="updateDisplayNumber(this.value)">
+    <input type="button" id="subtract" value="-" onclick="updateDisplay(this.value)">
+    <br>
+    <input type="button" id="num1" value="1" onclick="updateDisplayNumber(this.value)">
+    <input type="button" id="num2" value="2" onclick="updateDisplayNumber(this.value)">
+    <input type="button" id="num3" value="3" onclick="updateDisplayNumber(this.value)">
+    <input type="button" id="add" value="+" onclick="updateDisplay(this.value)">
+    <br>
+    <input type="button" id="num0" value="0" onclick="updateDisplayNumber(this.value)">
+    <input type="button" id="period" value="." onclick="updateDisplayNumber(this.value)">
+    <input type="button" id="equals" value="=" onclick="computeExpression()">
+  </div>
+
+</div>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
